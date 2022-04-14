@@ -6,27 +6,27 @@
          console.log(value)
       }
 
-         const calc = () => {
+      //    const calc = () => {
 
-            let inp1 = document.getElementById('inp1')
-            let inp2 = document.getElementById('inp2')
-            let inp3 = document.getElementById('inp3')
-            let result = document.getElementById('result')
+      //       let inp1 = document.getElementById('inp1')
+      //       let inp2 = document.getElementById('inp2')
+      //       let inp3 = document.getElementById('inp3')
+      //       let result = document.getElementById('result')
 
-            if (inp2.value == '+') {  
-               result.innerHTML = parseInt(inp1.value) + parseInt(inp3.value)
-            }
+      //       if (inp2.value == '+') {  
+      //          result.innerHTML = parseInt(inp1.value) + parseInt(inp3.value)
+      //       }
     
     
-            else if (inp2.value  == '-') { 
-                 result.innerHTML = parseInt(inp1.value) - parseInt(inp3.value)
-            }
+      //       else if (inp2.value  == '-') { 
+      //            result.innerHTML = parseInt(inp1.value) - parseInt(inp3.value)
+      //       }
     
-            else if (inp2.value  == '*') { 
-                result.innerHTML = parseInt(inp1.value) * parseInt(inp3.value)
-            }
+      //       else if (inp2.value  == '*') { 
+      //           result.innerHTML = parseInt(inp1.value) * parseInt(inp3.value)
+      //       }
          
-      }
+      // }
 
       let h2;
       let h1;
@@ -82,7 +82,7 @@
           } 
 
           else if (operator == '**'){
-              h2.innerHTML += h1.innerHTML + '='`
+              h2.innerHTML += h1.innerHTML + '='
               h1.innerHTML = parseInt(h2.innerHTML) ** parseInt(h1.innerHTML)
           } 
       }
@@ -113,9 +113,9 @@
                         <button className={"buttons"}>M</button> 
 
                         <button className={"buttons1"} >%</button>
-                        <button className={"buttons1"} onClick={()=> clearr()}>CE</button>
+                        <button className={"buttons1"} onClick={clearr}>CE</button>
                         <button className={"buttons1"}>C</button>
-                        <button className={"buttons1"} onClick={()=> del()}>DEL</button>
+                        <button className={"buttons1"} onClick={del}>DEL</button>
 
                         <button className={"buttons1"}>⅟</button>
                         <button className={"buttons2"} onClick={()=>operatorr('**')}>x²</button>
